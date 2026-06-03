@@ -135,7 +135,7 @@ ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exce
 
 Dadurch konnte Streamlit im PythonAnywhere-Free-Account nicht vollständig installiert werden.
 
-Aus diesem Grund erfolgt die Abgabe über das Bitbucket-Repository.
+Aus diesem Grund erfolgt die Abgabe nur über das Bitbucket-Repository.
 
 ---
 
@@ -143,4 +143,4 @@ Aus diesem Grund erfolgt die Abgabe über das Bitbucket-Repository.
 
 Die vollständigen Projektdateien befinden sich im Bitbucket-Repository.
 
-URL: bitte hier den Bitbucket-Link einfügen
+URL: [https://bitbucket.org/eelkhamesy/streamlit/src/main/]
