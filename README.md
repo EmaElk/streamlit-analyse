@@ -4,13 +4,13 @@ Dieses Repository enthält die Streamlit-Aufgaben aus dem Unterricht.
 
 ## Übersicht
 
-| Aufgabe   | Datei                                       | Beschreibung                                                                  |
-| --------- | ------------------------------------------- | ----------------------------------------------------------------------------- |
-| Aufgabe 1 | `aufgabe1.py`                               | Erste Streamlit-App mit Titel, Widgets, bedingter Ausgabe und Rerun-Kommentar |
-| Aufgabe 2 | `aufgabe2.py`                               | Zähler-App mit `st.session_state` und Reset-Button                            |
-| Aufgabe 3 | `aufgabe3.py` + `abc_analyse_aus_excel.csv` | Mini-Dashboard mit CSV-Datei, Cache, Filter, Metriken und Tabelle             |
-| Aufgabe 4 | `aufgabe4.py`                               | Kurze Reflexion zu Streamlit, Django und FastAPI                              |
-| Bonus     | optional                                    | Deployment auf Streamlit Community Cloud                                      |
+| Aufgabe    | Datei                                       | Beschreibung                                                                  |
+| ---------- | ------------------------------------------- | ----------------------------------------------------------------------------- |
+| Aufgabe 1  | `aufgabe1.py`                               | Erste Streamlit-App mit Titel, Widgets, bedingter Ausgabe und Rerun-Kommentar |
+| Aufgabe 2  | `aufgabe2.py`                               | Zähler-App mit `st.session_state` und Reset-Button                            |
+| Aufgabe 3  | `aufgabe3.py` + `abc_analyse_aus_excel.csv` | Mini-Dashboard mit CSV-Datei, Cache, Filter, Metriken, Tabelle und Diagramm   |
+| Aufgabe 4  | `aufgabe4.py`                               | Kurze Reflexion zu Streamlit, Django und FastAPI                              |
+| Deployment | PythonAnywhere-Test                         | Deployment wurde getestet, ist aber mit dem Free Account fehlgeschlagen       |
 
 ---
 
@@ -24,7 +24,7 @@ Die App enthält:
 * ein Texteingabefeld mit `st.text_input()`
 * einen Slider mit `st.slider()`
 * eine bedingte Ausgabe mit `if`/`else`
-* einen Kommentar, der erklärt, wann Streamlit das Skript neu ausführt
+* einen Kommentar zum Rerun-Prinzip
 
 ### Starten
 
@@ -36,9 +36,9 @@ streamlit run aufgabe1.py
 
 ## Aufgabe 2 — Session State: Zähler-App
 
-In `aufgabe2.py` wurde eine Zähler-App erstellt.
+In `aufgabe2.py` wurde eine Zähler-App umgesetzt.
 
-Die App zeigt zuerst als Kommentar den falschen Ansatz mit einer normalen Variable. Dieser Ansatz funktioniert nicht richtig, weil Streamlit das Skript bei jeder Änderung neu ausführt.
+Zuerst ist im Code der falsche Ansatz als Kommentar sichtbar. Dieser Ansatz funktioniert nicht richtig, weil normale Variablen bei Streamlit nach einem Rerun wieder neu gesetzt werden.
 
 Danach wurde der richtige Ansatz mit `st.session_state` umgesetzt.
 
@@ -61,6 +61,7 @@ streamlit run aufgabe2.py
 In `aufgabe3.py` wurde ein kleines Dashboard zur ABC-Analyse erstellt.
 
 Als Datengrundlage wird die CSV-Datei `abc_analyse_aus_excel.csv` verwendet.
+Die Daten stammen aus der zuvor manuell erstellten Excel-Auswertung.
 
 Die App enthält:
 
@@ -69,7 +70,7 @@ Die App enthält:
 * Kennzahlen mit `st.metric()`
 * Spaltenlayout mit `st.columns()`
 * interaktiven Filter mit `st.selectbox()`
-* Anzeige der Daten mit `st.dataframe()`
+* Anzeige der gefilterten Daten mit `st.dataframe()`
 * Balkendiagramm mit `st.bar_chart()`
 
 ### Starten
@@ -84,7 +85,7 @@ streamlit run aufgabe3.py
 
 Die Reflexion befindet sich in der Datei `aufgabe4.py`.
 
-In der Reflexion wird kurz erklärt, wann Streamlit sinnvoll ist und wann man eher Django oder FastAPI verwenden würde.
+Darin wird kurz erklärt, wann Streamlit sinnvoll ist und wann man eher Django oder FastAPI verwenden würde.
 
 ---
 
@@ -94,13 +95,13 @@ Der Ordner enthält folgende Dateien:
 
 ```text
 Streamlit/
+├── README.md
+├── abc_analyse_aus_excel.csv
 ├── aufgabe1.py
 ├── aufgabe2.py
 ├── aufgabe3.py
 ├── aufgabe4.py
-├── abc_analyse_aus_excel.csv
-├── requirements.txt
-└── README.md
+└── requirements.txt
 ```
 
 ---
@@ -114,31 +115,32 @@ streamlit
 pandas
 ```
 
----
-
-## Installation und Ausführung
-
-Zuerst müssen die benötigten Pakete installiert werden:
+Installation:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Danach kann eine App gestartet werden, zum Beispiel:
+---
 
-```bash
-streamlit run aufgabe3.py
+## Deployment
+
+Das Deployment der Streamlit-App wurde mit PythonAnywhere getestet.
+
+Beim Installieren der benötigten Pakete aus `requirements.txt` ist folgender Fehler aufgetreten:
+
+```text
+ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exceeded
 ```
+
+Dadurch konnte Streamlit im PythonAnywhere-Free-Account nicht vollständig installiert werden.
+
+Aus diesem Grund erfolgt die Abgabe über das Bitbucket-Repository.
 
 ---
 
-## Bonusaufgabe — Deployment
+## Repository
 
-Die Bonusaufgabe ist optional.
+Die vollständigen Projektdateien befinden sich im Bitbucket-Repository.
 
-Falls die App später auf Streamlit Community Cloud veröffentlicht wird, kann der Link hier ergänzt werden:
-
-```text
-Deployment-Link: noch nicht vorhanden
-```
-                                                     |
+URL: bitte hier den Bitbucket-Link einfügen
