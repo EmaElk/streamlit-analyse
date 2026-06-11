@@ -1,0 +1,209 @@
+﻿KNr;Kname;BestNr;BestDatum;ArtBez;Menge;Preis;Umsatz
+1;TechCorp GmbH;2001;02.02.2024;Gaming-Maus;9;92,69;834,21
+1;TechCorp GmbH;2001;02.02.2024;Laptop 15 Zoll;6;905;5430
+1;TechCorp GmbH;2002;04.04.2025;Grafikkarte 4GB;7;213,39;1493,73
+1;TechCorp GmbH;2002;04.04.2025;Betriebssystem-Lizenz;5;128,03;640,15
+1;TechCorp GmbH;2002;04.04.2025;Mechanische Tastatur;6;138,7;832,2
+1;TechCorp GmbH;2003;10.12.2024;Betriebssystem-Lizenz;8;123,59;988,72
+1;TechCorp GmbH;2003;10.12.2024;Monitor 27 Zoll 4K;7;452;3164
+1;TechCorp GmbH;2003;10.12.2024;Mechanische Tastatur;3;133,89;401,67
+1;TechCorp GmbH;2004;15.04.2025;Monitor 27 Zoll 4K;8;452;3616
+1;TechCorp GmbH;2004;15.04.2025;Gaming-Headset;6;77,24;463,44
+1;TechCorp GmbH;2004;15.04.2025;Betriebssystem-Lizenz;3;123,59;370,77
+1;TechCorp GmbH;2005;21.08.2024;Gaming-Stuhl;7;170,71;1194,97
+1;TechCorp GmbH;2005;21.08.2024;Monitor 27 Zoll 4K;10;459,99;4599,9
+1;TechCorp GmbH;2005;21.08.2024;Betriebssystem-Lizenz;8;128,03;1024,24
+1;TechCorp GmbH;2006;15.06.2024;Gaming-Stuhl;5;170,71;853,55
+1;TechCorp GmbH;2006;15.06.2024;Drucker Laser SW;6;259,99;1559,94
+1;TechCorp GmbH;2006;15.06.2024;Monitor 27 Zoll 4K;5;459,99;2299,95
+1;TechCorp GmbH;2006;15.06.2024;Gaming-Headset;10;80,01;800,1
+2;DigitalHub AG;2007;23.01.2025;Gaming-Headset;6;80,01;480,06
+2;DigitalHub AG;2007;23.01.2025;Gaming-Stuhl;3;170,71;512,13
+2;DigitalHub AG;2007;23.01.2025;Mechanische Tastatur;8;138,7;1109,6
+2;DigitalHub AG;2007;23.01.2025;Betriebssystem-Lizenz;9;128,03;1152,27
+2;DigitalHub AG;2007;23.01.2025;Laptop 15 Zoll;7;920;6440
+2;DigitalHub AG;2008;08.03.2024;Mechanische Tastatur;10;131,24;1312,4
+2;DigitalHub AG;2008;08.03.2024;Externe Festplatte 1TB;7;101,24;708,68
+2;DigitalHub AG;2008;08.03.2024;Gaming-Headset;5;76,24;381,2
+2;DigitalHub AG;2008;08.03.2024;Gaming-Maus;6;91,24;547,44
+2;DigitalHub AG;2009;26.09.2024;Betriebssystem-Lizenz;10;119,99;1199,9
+2;DigitalHub AG;2009;26.09.2024;Mechanische Tastatur;4;129,99;519,96
+2;DigitalHub AG;2009;26.09.2024;Monitor 27 Zoll 4K;4;449,99;1799,96
+2;DigitalHub AG;2009;26.09.2024;Drucker Laser SW;5;249,99;1249,95
+2;DigitalHub AG;2010;12.06.2024;Monitor 27 Zoll 4K;7;449,99;3149,93
+2;DigitalHub AG;2010;12.06.2024;Betriebssystem-Lizenz;3;119,99;359,97
+2;DigitalHub AG;2010;12.06.2024;Gaming-Headset;4;74,99;299,96
+2;DigitalHub AG;2010;12.06.2024;Drucker Laser SW;7;249,99;1749,93
+2;DigitalHub AG;2011;24.04.2024;Grafikkarte 4GB;7;213,39;1493,73
+2;DigitalHub AG;2011;24.04.2024;Externe Festplatte 1TB;5;106,69;533,45
+2;DigitalHub AG;2011;24.04.2024;Laptop 15 Zoll;4;920;3680
+2;DigitalHub AG;2011;24.04.2024;Mechanische Tastatur;7;138,7;970,9
+3;Innovate Solutions OG;2012;03.06.2025;Mechanische Tastatur;8;131,24;1049,92
+3;Innovate Solutions OG;2012;03.06.2025;Grafikkarte 4GB;10;201,24;2012,4
+3;Innovate Solutions OG;2012;03.06.2025;Laptop 15 Zoll;3;910;2730
+3;Innovate Solutions OG;2013;24.04.2024;Gaming-Stuhl;4;170,71;682,84
+3;Innovate Solutions OG;2013;24.04.2024;Laptop 15 Zoll;4;920;3680
+3;Innovate Solutions OG;2013;24.04.2024;Gaming-Maus;10;96,02;960,2
+3;Innovate Solutions OG;2013;24.04.2024;Drucker Laser SW;4;259,99;1039,96
+3;Innovate Solutions OG;2014;29.06.2025;Externe Festplatte 1TB;7;101,24;708,68
+3;Innovate Solutions OG;2014;29.06.2025;Gaming-Headset;9;76,24;686,16
+3;Innovate Solutions OG;2014;29.06.2025;Grafikkarte 4GB;6;201,24;1207,44
+3;Innovate Solutions OG;2015;24.07.2024;Mechanische Tastatur;6;138,7;832,2
+3;Innovate Solutions OG;2015;24.07.2024;Externe Festplatte 1TB;6;106,69;640,14
+3;Innovate Solutions OG;2015;24.07.2024;Gaming-Headset;4;80,01;320,04
+3;Innovate Solutions OG;2015;24.07.2024;Laptop 15 Zoll;8;920;7360
+3;Innovate Solutions OG;2016;22.01.2024;Laptop 15 Zoll;6;910;5460
+3;Innovate Solutions OG;2016;22.01.2024;Monitor 27 Zoll 4K;4;455;1820
+3;Innovate Solutions OG;2016;22.01.2024;Mechanische Tastatur;3;131,24;393,72
+4;MegaRetail KG;2017;13.03.2024;Externe Festplatte 1TB;10;101,24;1012,4
+4;MegaRetail KG;2017;13.03.2024;Grafikkarte 4GB;10;201,24;2012,4
+4;MegaRetail KG;2017;13.03.2024;Mechanische Tastatur;9;131,24;1181,16
+4;MegaRetail KG;2018;13.07.2024;Betriebssystem-Lizenz;9;123,59;1112,31
+4;MegaRetail KG;2018;13.07.2024;Mechanische Tastatur;10;133,89;1338,9
+4;MegaRetail KG;2018;13.07.2024;Gaming-Maus;3;92,69;278,07
+4;MegaRetail KG;2019;10.04.2024;Mechanische Tastatur;6;133,89;803,34
+4;MegaRetail KG;2019;10.04.2024;Monitor 27 Zoll 4K;10;452;4520
+4;MegaRetail KG;2019;10.04.2024;Gaming-Headset;9;77,24;695,16
+4;MegaRetail KG;2020;06.07.2024;Gaming-Stuhl;4;170,71;682,84
+4;MegaRetail KG;2020;06.07.2024;Monitor 27 Zoll 4K;3;459,99;1379,97
+4;MegaRetail KG;2020;06.07.2024;Externe Festplatte 1TB;3;106,69;320,07
+4;MegaRetail KG;2020;06.07.2024;Betriebssystem-Lizenz;4;128,03;512,12
+4;MegaRetail KG;2021;30.08.2024;Externe Festplatte 1TB;9;101,24;911,16
+4;MegaRetail KG;2021;30.08.2024;Gaming-Maus;3;91,24;273,72
+4;MegaRetail KG;2022;03.01.2024;Externe Festplatte 1TB;10;99,99;999,9
+4;MegaRetail KG;2022;03.01.2024;Drucker Laser SW;5;249,99;1249,95
+4;MegaRetail KG;2022;03.01.2024;Betriebssystem-Lizenz;6;119,99;719,94
+4;MegaRetail KG;2022;03.01.2024;Mechanische Tastatur;7;129,99;909,93
+4;MegaRetail KG;2023;10.08.2024;Gaming-Headset;10;77,24;772,4
+4;MegaRetail KG;2023;10.08.2024;Laptop 15 Zoll;5;905;4525
+4;MegaRetail KG;2023;10.08.2024;Mechanische Tastatur;3;133,89;401,67
+4;MegaRetail KG;2023;10.08.2024;Gaming-Maus;4;92,69;370,76
+4;MegaRetail KG;2023;10.08.2024;Betriebssystem-Lizenz;5;123,59;617,95
+4;MegaRetail KG;2024;12.05.2026;Mechanische Tastatur;32;133,89;4284,48
+4;MegaRetail KG;2025;21.05.2026;Gaming-Headset;5;77,24;386,2
+5;SmartOffice GmbH;1003;16.09.2024;VPN-Dienst (1 Jahr);5;50,49;252,45
+5;SmartOffice GmbH;1003;16.09.2024;Gaming-Maus;4;90,49;361,96
+5;SmartOffice GmbH;1003;16.09.2024;Externe Festplatte 1TB;5;100,49;502,45
+5;SmartOffice GmbH;1005;17.11.2024;Betriebssystem-Lizenz;4;128,03;512,12
+5;SmartOffice GmbH;1005;17.11.2024;Webcam HD;5;64,01;320,05
+5;SmartOffice GmbH;1005;17.11.2024;Grafikkarte 4GB;4;213,39;853,56
+5;SmartOffice GmbH;1005;17.11.2024;SSD 500GB;5;85,35;426,75
+5;SmartOffice GmbH;1005;17.11.2024;Gaming-Maus;3;96,02;288,06
+5;SmartOffice GmbH;1025;09.05.2024;HDMI-Kabel 2m;5;14,69;73,45
+5;SmartOffice GmbH;1025;09.05.2024;Grafikkarte 4GB;3;195,99;587,97
+5;SmartOffice GmbH;1025;09.05.2024;Externe Festplatte 1TB;2;97,99;195,98
+5;SmartOffice GmbH;1025;09.05.2024;Gaming-Headset;1;73,49;73,49
+5;SmartOffice GmbH;1028;03.11.2024;Antivirus-Software;5;52,49;262,45
+5;SmartOffice GmbH;1028;03.11.2024;Gaming-Maus;2;94,49;188,98
+5;SmartOffice GmbH;1028;03.11.2024;Mechanische Tastatur;3;136,49;409,47
+6;NetWork Services AG;1002;28.11.2024;Gaming-Stuhl;4;170,71;682,84
+6;NetWork Services AG;1002;28.11.2024;Gaming-Headset;1;80,01;80,01
+6;NetWork Services AG;1002;28.11.2024;HDMI-Kabel 2m;5;15,99;79,95
+6;NetWork Services AG;1002;28.11.2024;Externe Festplatte 1TB;2;106,69;213,38
+6;NetWork Services AG;1002;28.11.2024;Gaming-Maus;5;96,02;480,1
+6;NetWork Services AG;1007;26.12.2024;Externe Festplatte 1TB;4;106,69;426,76
+6;NetWork Services AG;1007;26.12.2024;Antivirus-Software;3;53,34;160,02
+6;NetWork Services AG;1007;26.12.2024;Mechanische Tastatur;4;138,7;554,8
+6;NetWork Services AG;1019;24.07.2024;USB-Stick 64GB;3;19,59;58,77
+6;NetWork Services AG;1019;24.07.2024;SSD 500GB;1;78,39;78,39
+6;NetWork Services AG;1019;24.07.2024;Betriebssystem-Lizenz;4;117,59;470,36
+6;NetWork Services AG;1019;24.07.2024;Gaming-Maus;2;88,19;176,38
+6;NetWork Services AG;1019;24.07.2024;Mechanische Tastatur;1;127,39;127,39
+6;NetWork Services AG;1040;02.03.2024;Betriebssystem-Lizenz;3;134,39;403,17
+6;NetWork Services AG;1040;02.03.2024;Gaming-Headset;5;83,99;419,95
+6;NetWork Services AG;1040;02.03.2024;USB-Stick 64GB;2;22,39;44,78
+7;DataCenter Pro KG;1016;04.04.2024;Mechanische Tastatur;5;131,24;656,2
+7;DataCenter Pro KG;1016;04.04.2024;Grafikkarte 4GB;4;201,24;804,96
+7;DataCenter Pro KG;1027;12.08.2024;Gaming-Headset;3;77,24;231,72
+7;DataCenter Pro KG;1027;12.08.2024;Grafikkarte 4GB;2;205,99;411,98
+7;DataCenter Pro KG;1027;12.08.2024;VPN-Dienst (1 Jahr);4;51,49;205,96
+7;DataCenter Pro KG;1027;12.08.2024;SSD 500GB;1;82,39;82,39
+7;DataCenter Pro KG;1038;26.05.2024;Mechanische Tastatur;5;130,49;652,45
+7;DataCenter Pro KG;1038;26.05.2024;Gaming-Maus;3;90,49;271,47
+7;DataCenter Pro KG;1038;26.05.2024;Externe Festplatte 1TB;1;100,49;100,49
+8;IT Competence GmbH;1018;02.05.2024;Betriebssystem-Lizenz;3;119,99;359,97
+8;IT Competence GmbH;1018;02.05.2024;SSD 500GB;1;79,99;79,99
+8;IT Competence GmbH;1018;02.05.2024;VPN-Dienst (1 Jahr);5;49,99;249,95
+8;IT Competence GmbH;1018;02.05.2024;Webcam HD;4;59,99;239,96
+8;IT Competence GmbH;1018;02.05.2024;Gaming-Maus;1;89,99;89,99
+8;IT Competence GmbH;1020;27.12.2024;Gaming-Headset;2;75,74;151,48
+8;IT Competence GmbH;1020;27.12.2024;Mechanische Tastatur;5;130,74;653,7
+8;IT Competence GmbH;1020;27.12.2024;HDMI-Kabel 2m;4;15,74;62,96
+8;IT Competence GmbH;1021;13.02.2024;Grafikkarte 4GB;3;200,49;601,47
+8;IT Competence GmbH;1021;13.02.2024;Antivirus-Software;5;50,49;252,45
+8;IT Competence GmbH;1021;13.02.2024;Mechanische Tastatur;2;130,49;260,98
+8;IT Competence GmbH;1021;13.02.2024;Gaming-Headset;4;75,49;301,96
+9;SystemHouse OG;1001;01.04.2024;HDMI-Kabel 2m;1;14,99;14,99
+9;SystemHouse OG;1001;01.04.2024;USB-Stick 64GB;3;19,99;59,97
+9;SystemHouse OG;1001;01.04.2024;Webcam HD;5;59,99;299,95
+9;SystemHouse OG;1001;01.04.2024;Grafikkarte 4GB;5;199,99;999,95
+9;SystemHouse OG;1014;01.07.2024;Betriebssystem-Lizenz;3;123,59;370,77
+9;SystemHouse OG;1014;01.07.2024;USB-Stick 64GB;4;20,59;82,36
+9;SystemHouse OG;1014;01.07.2024;SSD 500GB;5;82,39;411,95
+9;SystemHouse OG;1033;14.02.2024;VPN-Dienst (1 Jahr);1;50,74;50,74
+9;SystemHouse OG;1033;14.02.2024;Grafikkarte 4GB;4;200,74;802,96
+9;SystemHouse OG;1033;14.02.2024;SSD 500GB;2;80,74;161,48
+10;CloudBase AG;1004;05.08.2024;USB-Stick 64GB;5;20,49;102,45
+10;CloudBase AG;1004;05.08.2024;Webcam HD;5;60,49;302,45
+10;CloudBase AG;1004;05.08.2024;Grafikkarte 4GB;1;200,49;200,49
+10;CloudBase AG;1004;05.08.2024;Gaming-Headset;5;75,49;377,45
+10;CloudBase AG;1012;25.04.2024;USB-Stick 64GB;5;20,99;104,95
+10;CloudBase AG;1012;25.04.2024;VPN-Dienst (1 Jahr);4;52,49;209,96
+10;CloudBase AG;1012;25.04.2024;Externe Festplatte 1TB;2;104,99;209,98
+10;CloudBase AG;1012;25.04.2024;Mechanische Tastatur;5;136,49;682,45
+10;CloudBase AG;1023;18.06.2024;Mechanische Tastatur;2;131,89;263,78
+10;CloudBase AG;1023;18.06.2024;USB-Stick 64GB;4;21,89;87,56
+10;CloudBase AG;1023;18.06.2024;VPN-Dienst (1 Jahr);1;51,89;51,89
+10;CloudBase AG;1023;18.06.2024;Gaming-Maus;5;91,89;459,45
+11;Mueller EDV e.U.;1015;13.04.2024;Webcam HD;2;60,74;121,48
+11;Mueller EDV e.U.;1015;13.04.2024;Mechanische Tastatur;2;130,74;261,48
+11;Mueller EDV e.U.;1015;13.04.2024;Gaming-Headset;4;75,74;302,96
+11;Mueller EDV e.U.;1015;13.04.2024;Gaming-Maus;1;90,74;90,74
+11;Mueller EDV e.U.;1029;19.07.2024;USB-Stick 64GB;1;21,33;21,33
+11;Mueller EDV e.U.;1029;19.07.2024;Gaming-Maus;4;96,02;384,08
+11;Mueller EDV e.U.;1029;19.07.2024;Gaming-Headset;2;80,01;160,02
+12;Weber IT Solutions;1013;08.04.2024;Antivirus-Software;4;53,34;213,36
+12;Weber IT Solutions;1013;08.04.2024;Externe Festplatte 1TB;3;106,69;320,07
+12;Weber IT Solutions;1013;08.04.2024;HDMI-Kabel 2m;1;15,99;15,99
+12;Weber IT Solutions;1013;08.04.2024;Betriebssystem-Lizenz;2;128,03;256,06
+12;Weber IT Solutions;1037;09.01.2024;Grafikkarte 4GB;1;209,99;209,99
+12;Weber IT Solutions;1037;09.01.2024;HDMI-Kabel 2m;4;15,74;62,96
+12;Weber IT Solutions;1037;09.01.2024;Betriebssystem-Lizenz;2;125,99;251,98
+13;Schmidt Buerotechnik;1036;23.08.2024;Gaming-Headset;3;74,99;224,97
+13;Schmidt Buerotechnik;1036;23.08.2024;VPN-Dienst (1 Jahr);2;49,99;99,98
+13;Schmidt Buerotechnik;1036;23.08.2024;SSD 500GB;5;79,99;399,95
+13;Schmidt Buerotechnik;1039;14.11.2024;Antivirus-Software;2;53,34;106,68
+13;Schmidt Buerotechnik;1039;14.11.2024;SSD 500GB;4;85,35;341,4
+13;Schmidt Buerotechnik;1039;14.11.2024;VPN-Dienst (1 Jahr);1;53,34;53,34
+14;Klein & Partner OG;1032;30.06.2024;Gaming-Maus;5;91,24;456,2
+14;Klein & Partner OG;1032;30.06.2024;USB-Stick 64GB;3;21,24;63,72
+14;Klein & Partner OG;1032;30.06.2024;Externe Festplatte 1TB;2;101,24;202,48
+14;Klein & Partner OG;1035;17.04.2024;Mechanische Tastatur;2;133,89;267,78
+14;Klein & Partner OG;1035;17.04.2024;USB-Stick 64GB;4;20,59;82,36
+14;Klein & Partner OG;1035;17.04.2024;Externe Festplatte 1TB;1;102,99;102,99
+15;Fischer Handel GmbH;1006;11.02.2024;USB-Stick 64GB;2;20,59;41,18
+15;Fischer Handel GmbH;1006;11.02.2024;Gaming-Maus;1;92,69;92,69
+15;Fischer Handel GmbH;1006;11.02.2024;Antivirus-Software;2;51,49;102,98
+15;Fischer Handel GmbH;1006;11.02.2024;HDMI-Kabel 2m;3;15,44;46,32
+15;Fischer Handel GmbH;1022;21.10.2024;Gaming-Headset;3;83,99;251,97
+15;Fischer Handel GmbH;1022;21.10.2024;Gaming-Maus;3;100,79;302,37
+15;Fischer Handel GmbH;1022;21.10.2024;Grafikkarte 4GB;1;223,99;223,99
+16;Bauer Computers e.U.;1017;14.09.2024;Betriebssystem-Lizenz;2;125,99;251,98
+16;Bauer Computers e.U.;1024;30.01.2024;SSD 500GB;3;81,24;243,72
+16;Bauer Computers e.U.;1024;30.01.2024;Antivirus-Software;2;51,24;102,48
+16;Bauer Computers e.U.;1024;30.01.2024;Gaming-Headset;4;76,24;304,96
+16;Bauer Computers e.U.;1024;30.01.2024;VPN-Dienst (1 Jahr);1;51,24;51,24
+17;Wagner Technik GmbH;1011;07.03.2024;Gaming-Headset;3;75,74;227,22
+17;Wagner Technik GmbH;1026;26.03.2024;USB-Stick 64GB;4;19,99;79,96
+17;Wagner Technik GmbH;1026;26.03.2024;Mechanische Tastatur;2;129,99;259,98
+17;Wagner Technik GmbH;1026;26.03.2024;Antivirus-Software;5;49,99;249,95
+17;Wagner Technik GmbH;1026;26.03.2024;Externe Festplatte 1TB;1;99,99;99,99
+18;Hoffmann IT e.U.;1034;08.10.2024;Antivirus-Software;3;48,99;146,97
+18;Hoffmann IT e.U.;1034;08.10.2024;Gaming-Maus;5;88,19;440,95
+18;Hoffmann IT e.U.;1034;08.10.2024;Gaming-Headset;1;73,49;73,49
+19;Schaefer Digital KG;1030;05.09.2024;Externe Festplatte 1TB;3;111,99;335,97
+19;Schaefer Digital KG;1030;05.09.2024;Grafikkarte 4GB;1;223,99;223,99
+19;Schaefer Digital KG;1030;05.09.2024;HDMI-Kabel 2m;5;16,79;83,95
+20;Koch Systems e.U.;1031;22.12.2024;Betriebssystem-Lizenz;2;121,89;243,78
+20;Koch Systems e.U.;1031;22.12.2024;Antivirus-Software;4;51,89;207,56
+20;Koch Systems e.U.;1031;22.12.2024;Mechanische Tastatur;1;131,89;131,89

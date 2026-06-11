@@ -6,32 +6,63 @@ st.set_page_config(page_title="Automatisierte ABC-Analyse", layout="wide")
 st.title("Automatisierte ABC-Analyse in Streamlit")
 
 st.write(
-    "Diese App liest die Ausgangsdaten aus einer CSV-Datei ein und berechnet die ABC-Analyse automatisch. "
-    "Bereits vorhandene berechnete Spalten aus der CSV werden nicht verwendet."
+    "Diese App liest die ursprünglichen Bestelldaten ein. "
+    "Eine Firma kann dabei mehrmals vorkommen, weil es mehrere Bestellungen oder Artikelpositionen geben kann. "
+    "Danach werden die Umsätze automatisch pro Firma zusammengefasst und daraus wird die ABC-Analyse berechnet."
 )
+
 
 @st.cache_data
 def lade_daten():
-    daten = pd.read_csv("abc_analyse_aus_excel.csv", sep=";", decimal=",")
+    daten = pd.read_csv("abc_rohdaten.csv", sep=";", decimal=",")
     return daten
 
 
 df_original = lade_daten()
 
-# Nur die echten Ausgangsdaten verwenden
-ausgangsdaten = df_original[["Kunde", "Umsatz"]].copy()
-
-st.subheader("Ausgangsdaten")
+st.subheader("1. Ausgangsdaten")
 
 st.write(
-    "Hier werden nur die ursprünglichen Daten angezeigt, also Kunde und Umsatz. "
-    "Berechnete Spalten aus der CSV werden bewusst ignoriert."
+    "Hier sieht man die ursprünglichen Daten. "
+    "Ein Unternehmen kann mehrmals vorkommen, weil jede Zeile eine einzelne Bestellposition darstellt."
 )
 
-st.dataframe(ausgangsdaten)
+st.dataframe(df_original)
 
-# Automatische ABC-Analyse
-analyse = ausgangsdaten.copy()
+
+st.subheader("2. Automatische Zusammenfassung pro Unternehmen")
+
+# Nur die Spalten verwenden, die für die ABC-Analyse wichtig sind
+ausgangsdaten = df_original[["Kname", "Umsatz"]].copy()
+
+# Falls Umsatz als Text mit Komma eingelesen wird, wird er sicher in eine Zahl umgewandelt
+ausgangsdaten["Umsatz"] = (
+    ausgangsdaten["Umsatz"]
+    .astype(str)
+    .str.replace(",", ".", regex=False)
+    .astype(float)
+)
+
+# Umsätze pro Unternehmen zusammenrechnen
+kundenumsatz = (
+    ausgangsdaten
+    .groupby("Kname", as_index=False)["Umsatz"]
+    .sum()
+)
+
+kundenumsatz = kundenumsatz.rename(columns={"Kname": "Kunde"})
+
+st.write(
+    "Hier wurden alle Umsätze eines Unternehmens automatisch addiert. "
+    "Dadurch gibt es jedes Unternehmen nur noch einmal mit seinem Gesamtumsatz."
+)
+
+st.dataframe(kundenumsatz)
+
+
+st.subheader("3. Automatisch berechnete ABC-Analyse")
+
+analyse = kundenumsatz.copy()
 
 analyse = analyse.sort_values(by="Umsatz", ascending=False).reset_index(drop=True)
 
@@ -39,6 +70,7 @@ gesamtumsatz = analyse["Umsatz"].sum()
 
 analyse["Umsatzanteil in %"] = analyse["Umsatz"] / gesamtumsatz * 100
 analyse["Kumuliert in %"] = analyse["Umsatzanteil in %"].cumsum()
+
 
 def berechne_abc(kumuliert):
     if kumuliert <= 80:
@@ -48,15 +80,16 @@ def berechne_abc(kumuliert):
     else:
         return "C"
 
+
 analyse["ABC"] = analyse["Kumuliert in %"].apply(berechne_abc)
 
-st.subheader("Automatisch berechnete ABC-Analyse")
-
 st.write(
-    "Hier berechnet Streamlit die Umsatzanteile, die kumulierten Werte und die ABC-Klassen automatisch."
+    "Jetzt berechnet Streamlit automatisch den Umsatzanteil, "
+    "den kumulierten Umsatzanteil und die ABC-Klasse."
 )
 
 st.dataframe(analyse)
+
 
 st.subheader("Filter nach ABC-Klasse")
 
@@ -69,6 +102,7 @@ if abc_auswahl == "Alle":
     gefilterte_daten = analyse
 else:
     gefilterte_daten = analyse[analyse["ABC"] == abc_auswahl]
+
 
 st.subheader("Kennzahlen")
 
@@ -96,17 +130,20 @@ with spalte3:
 with spalte4:
     st.metric("Bester Kunde", bester_kunde)
 
+
 st.subheader("Gefilterte Tabelle")
 
 st.dataframe(gefilterte_daten)
 
-st.subheader("Umsatz je Kunde")
+
+st.subheader("Umsatz je Unternehmen")
 
 if anzahl_kunden > 0:
     diagramm_daten = gefilterte_daten.set_index("Kunde")["Umsatz"]
     st.bar_chart(diagramm_daten)
 else:
     st.warning("Für diese Auswahl gibt es keine Daten.")
+
 
 st.subheader("Zusammenfassung nach ABC-Klassen")
 
@@ -122,6 +159,7 @@ abc_zusammenfassung["Umsatzanteil in %"] = (
 
 st.dataframe(abc_zusammenfassung)
 
+
 st.subheader("Interpretation")
 
 anzahl_a = len(analyse[analyse["ABC"] == "A"])
@@ -129,8 +167,8 @@ anzahl_b = len(analyse[analyse["ABC"] == "B"])
 anzahl_c = len(analyse[analyse["ABC"] == "C"])
 
 st.info(
-    f"Die ABC-Analyse wurde automatisch berechnet. "
-    f"Es gibt {anzahl_a} A-Kunden, {anzahl_b} B-Kunden und {anzahl_c} C-Kunden. "
-    "A-Kunden haben den größten Umsatzanteil und sind daher besonders wichtig. "
-    "B-Kunden sind mittelwichtig. C-Kunden haben einen kleineren Umsatzanteil."
+    f"Die ABC-Analyse wurde automatisch aus den Rohdaten berechnet. "
+    f"Zuerst wurden alle Bestellpositionen pro Unternehmen zusammengefasst. "
+    f"Danach wurden die Unternehmen nach Umsatz sortiert und in ABC-Klassen eingeteilt. "
+    f"Es gibt {anzahl_a} A-Unternehmen, {anzahl_b} B-Unternehmen und {anzahl_c} C-Unternehmen."
 )
