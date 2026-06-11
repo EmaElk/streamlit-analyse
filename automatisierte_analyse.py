@@ -1,0 +1,119 @@
+import streamlit as st
+import pandas as pd
+
+st.set_page_config(page_title="Automatisierte ABC-Analyse", layout="wide")
+
+st.title("Automatisierte ABC-Analyse in Streamlit")
+
+st.write(
+    "Diese App lädt eine CSV-Datei mit Kunden und Umsätzen. "
+    "Die ABC-Analyse wird automatisch berechnet und anschließend als Tabelle, Kennzahlen und Diagramm dargestellt."
+)
+
+@st.cache_data
+def lade_daten():
+    return pd.read_csv("abc_analyse_aus_excel.csv", sep=";", decimal=",")
+
+
+df = lade_daten()
+
+st.subheader("Ausgangsdaten")
+st.dataframe(df)
+
+# Automatische Berechnung
+analyse = df.copy()
+
+analyse = analyse.sort_values(by="Umsatz", ascending=False)
+gesamtumsatz = analyse["Umsatz"].sum()
+
+analyse["Umsatzanteil in %"] = analyse["Umsatz"] / gesamtumsatz * 100
+analyse["Kumuliert in %"] = analyse["Umsatzanteil in %"].cumsum()
+
+def berechne_abc(kumuliert):
+    if kumuliert <= 80:
+        return "A"
+    elif kumuliert <= 95:
+        return "B"
+    else:
+        return "C"
+
+analyse["ABC"] = analyse["Kumuliert in %"].apply(berechne_abc)
+
+st.subheader("Automatisch berechnete ABC-Analyse")
+st.dataframe(analyse)
+
+st.subheader("Filter")
+
+abc_auswahl = st.selectbox(
+    "Welche ABC-Klasse möchtest du anzeigen?",
+    ["Alle", "A", "B", "C"]
+)
+
+if abc_auswahl == "Alle":
+    gefilterte_daten = analyse
+else:
+    gefilterte_daten = analyse[analyse["ABC"] == abc_auswahl]
+
+st.subheader("Kennzahlen")
+
+anzahl_kunden = len(gefilterte_daten)
+umsatz_gefiltert = gefilterte_daten["Umsatz"].sum()
+
+if anzahl_kunden > 0:
+    bester_kunde = gefilterte_daten.loc[gefilterte_daten["Umsatz"].idxmax(), "Kunde"]
+    hoechster_umsatz = gefilterte_daten["Umsatz"].max()
+else:
+    bester_kunde = "-"
+    hoechster_umsatz = 0
+
+spalte1, spalte2, spalte3, spalte4 = st.columns(4)
+
+with spalte1:
+    st.metric("Gesamtumsatz", f"{gesamtumsatz:.2f} €")
+
+with spalte2:
+    st.metric("Umsatz Auswahl", f"{umsatz_gefiltert:.2f} €")
+
+with spalte3:
+    st.metric("Anzahl Kunden", anzahl_kunden)
+
+with spalte4:
+    st.metric("Bester Kunde", bester_kunde)
+
+st.subheader("Gefilterte Tabelle")
+st.dataframe(gefilterte_daten)
+
+st.subheader("Umsatz je Kunde")
+
+if anzahl_kunden > 0:
+    diagramm_daten = gefilterte_daten.set_index("Kunde")["Umsatz"]
+    st.bar_chart(diagramm_daten)
+else:
+    st.warning("Für diese Auswahl gibt es keine Daten.")
+
+st.subheader("Zusammenfassung nach ABC-Klassen")
+
+abc_zusammenfassung = analyse.groupby("ABC").agg(
+    Anzahl_Kunden=("Kunde", "count"),
+    Umsatz=("Umsatz", "sum"),
+    Durchschnittlicher_Umsatz=("Umsatz", "mean")
+).reset_index()
+
+abc_zusammenfassung["Umsatzanteil in %"] = (
+    abc_zusammenfassung["Umsatz"] / gesamtumsatz * 100
+)
+
+st.dataframe(abc_zusammenfassung)
+
+st.subheader("Interpretation")
+
+anzahl_a = len(analyse[analyse["ABC"] == "A"])
+anzahl_b = len(analyse[analyse["ABC"] == "B"])
+anzahl_c = len(analyse[analyse["ABC"] == "C"])
+
+st.info(
+    f"Die ABC-Analyse wurde automatisch berechnet. "
+    f"Es gibt {anzahl_a} A-Kunden, {anzahl_b} B-Kunden und {anzahl_c} C-Kunden. "
+    "A-Kunden verursachen den größten Umsatzanteil und sind daher besonders wichtig. "
+    "B-Kunden sind mittelwichtig. C-Kunden haben einen kleineren Umsatzanteil."
+)

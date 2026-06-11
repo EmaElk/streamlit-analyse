@@ -88,6 +88,30 @@ Die Reflexion befindet sich in der Datei `aufgabe4.py`.
 Darin wird kurz erklärt, wann Streamlit sinnvoll ist und wann man eher Django oder FastAPI verwenden würde.
 
 ---
+## Schritt 3 — Automatisierte Analyse in Streamlit
+
+Zusätzlich zu den Einführungsaufgaben wurde eine automatisierte ABC-Analyse mit Streamlit umgesetzt.
+
+Die Datei `automatisierte_analyse.py` lädt die CSV-Datei `abc_analyse_aus_excel.csv` und berechnet die ABC-Analyse automatisch.
+
+Die App berechnet automatisch:
+
+* Gesamtumsatz
+* Umsatzanteil je Kunde
+* kumulierten Umsatzanteil
+* ABC-Klasse
+* Kennzahlen
+* gefilterte Tabellen
+* Diagramme
+* kurze Interpretation der Ergebnisse
+
+### Starten
+
+```bash
+streamlit run automatisierte_analyse.py
+```
+
+---
 
 ## Verwendete Dateien
 
@@ -135,7 +159,14 @@ ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exce
 
 Dadurch konnte Streamlit im PythonAnywhere-Free-Account nicht vollständig installiert werden.
 
-Aus diesem Grund erfolgt die Abgabe nur über das Bitbucket-Repository.
+Die App wurde mit Streamlit Community Cloud deployed.
+
+Live-URL: https://app-analysegit-5ohkeqwecpnybbkt7pkkxk.streamlit.app/
+
+Für das Deployment wurde folgende Datei verwendet:
+
+```text
+aufgabe3.py
 
 ---
 
